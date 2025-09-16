@@ -4,6 +4,14 @@ Transform your resume into an interactive, AI-powered portfolio that tells your 
 
 ## What it does
 
+Portfolio Agents is a platform that converts traditional 
+resumes into dynamic, personalized landing pages powered 
+by AI agents. Job seekers, freelancers, and 
+professionals can upload their resume and instantly 
+generate a professional portfolio with an embedded AI 
+agent that can answer questions about their experience, 
+skills, and career journey.
+
 Upload your resume → Get an AI agent that represents you → Share a professional portfolio link
 
 - **AI Agent Representative**: An intelligent agent that answers questions about your experience and skills
