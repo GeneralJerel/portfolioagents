@@ -2,6 +2,8 @@
 
 Transform your resume into an interactive, AI-powered portfolio that tells your career story.
 
+https://www.loom.com/share/59e7b54ebd0b4c1f8410d487d92110ee?sid=5fadffd8-f4f9-4f0a-8324-ce35def746f8
+
 ## What it does
 
 Portfolio Agents is a platform that converts traditional 
