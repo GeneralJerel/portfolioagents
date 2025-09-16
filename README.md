@@ -2,7 +2,11 @@
 
 Transform your resume into an interactive, AI-powered portfolio that tells your career story.
 
-https://www.loom.com/share/59e7b54ebd0b4c1f8410d487d92110ee?sid=5fadffd8-f4f9-4f0a-8324-ce35def746f8
+## [Watch the Video]([https://www.loom.com/share/59e7b54ebd0b4c1f8410d487d92110ee?sid=5fadffd8-f4f9-4f0a-8324-ce35def746f8])
+<img width="1445" height="866" alt="image" src="https://github.com/user-attachments/assets/d359e2a2-2644-468a-bafc-51fb5acbe914" />
+
+
+
 
 ## What it does
 
