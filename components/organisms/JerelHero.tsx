@@ -65,3 +65,6 @@ const JerelHero: React.FC = () => {
 };
 
 export default JerelHero;
+
+
+

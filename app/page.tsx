@@ -1,4 +1,4 @@
-import HeroSection from "@/components/organisms/HeroSection";
+import HeroSection from "../components/organisms/HeroSection";
 import ResumeDropZone from "@/components/organisms/ResumeDropZone";
 
 export default function Home() {

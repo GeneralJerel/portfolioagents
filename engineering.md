@@ -56,7 +56,7 @@ portfolio-agents/
 
 ## 🛠️ Implementation Plan
 
-### Phase 1: Core Backend (Hours 1-4)
+### Phase 1: Core Backend
 
 #### 1. Resume Parser (`ai/strands/agents/resume-parser.ts`)
 ```typescript
@@ -129,7 +129,7 @@ export async function POST(request: Request) {
 }
 ```
 
-### Phase 2: Frontend Integration (Hours 5-6)
+### Phase 2: Frontend Integration
 
 #### 4. Upload & Preferences Page (`app/create/page.tsx`)
 ```typescript
@@ -152,7 +152,7 @@ export default function CreatePage() {
 }
 ```
 
-### Phase 3: Public Portfolio (Hours 7-8)
+### Phase 3: Public Portfolio
 
 #### 5. Dynamic Portfolio Page (`app/[slug]/page.tsx`)
 ```typescript
@@ -175,7 +175,7 @@ export default async function PortfolioPage({ params }: { params: { slug: string
 
 ---
 
-## 🚢 MVP Roadmap (Days 2-5)
+## 🚢 MVP Roadmap
 
 ### Day 2: Data Persistence
 ```typescript
