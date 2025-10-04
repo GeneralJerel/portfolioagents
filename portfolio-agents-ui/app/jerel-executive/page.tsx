@@ -7,101 +7,10 @@ import {
   Calendar, ChevronRight, Building, Target, Globe,
   Users, BarChart3, ExternalLink
 } from "lucide-react";
+import { executiveExperiences, achievements, education, coreCompetencies } from "@/mockdata/jerel";
 
 const ExecutiveClassicPage: React.FC = () => {
-  const experiences = [
-    {
-      company: "FrontierAI",
-      location: "Global (Remote)",
-      title: "Founder — Product Engineer",
-      startDate: "October 2024",
-      endDate: "Present",
-      highlights: [
-        "Established product & AI engineering consultancy focused on LLM and Agentic Engineering",
-        "Delivered AI-native products achieving 2,000+ users within 72 hours of launch",
-        "Achieved 90% reduction in development time through generative development methodologies",
-        "Generated 1.35M content views in 90 days, representing 1,213% quarter-over-quarter growth"
-      ]
-    },
-    {
-      company: "Full Scale Ventures",
-      location: "Kansas, United States (Remote)",
-      title: "Director of Product Management, Startup Portfolio",
-      startDate: "November 2024",
-      endDate: "Present",
-      highlights: [
-        "Direct AI and prompt engineering strategy across multiple venture portfolio companies",
-        "Launched 100+ prompt prototypes, reducing idea validation timeline from 2 weeks to 1 day",
-        "Align cross-functional teams across engineering, design, and business operations"
-      ]
-    },
-    {
-      company: "GoTeam",
-      location: "Cebu City, Philippines",
-      title: "Director of Product Management, Enterprise AI & Process Automation",
-      startDate: "April 2024",
-      endDate: "September 2024",
-      highlights: [
-        "Developed AI hiring platform reducing average turnaround from 45 to 18 days",
-        "Processed 61,151 applicants and conducted 15,332 interviews through automated systems",
-        "Delivered billing automation solution eliminating 40 hours of manual reporting",
-        "Implemented automation tools generating 72,000 hours in annual time savings"
-      ]
-    },
-    {
-      company: "MultiplAI",
-      location: "Cebu City, Philippines",
-      title: "Director of Product Management, AI SaaS Startup Portfolio",
-      startDate: "April 2024",
-      endDate: "September 2024",
-      highlights: [
-        "Launched 3 go-to-market products achieving 1,292 users and $7,788 revenue in 30 days",
-        "Increased monthly product utilization by 38% through data-driven prioritization",
-        "Implemented PLG MOAT framework for strategic product positioning"
-      ]
-    },
-    {
-      company: "TripGuru",
-      location: "Hong Kong",
-      title: "Lead Product Manager, Platform",
-      startDate: "August 2023",
-      endDate: "April 2024",
-      highlights: [
-        "Led product strategy for $30M startup operating across 10 countries",
-        "Implemented generative AI support system reducing response time from 2 minutes to 10 seconds",
-        "Contributed to 19.06% year-over-year profit increase through strategic product initiatives"
-      ]
-    }
-  ];
-
-  const achievements = [
-    "Top 100 Brightest Minds Under 30 — Stellar Philippines",
-    "LinkedIn Top Voice — Product Management (2023)",
-    "7× Google Developer Groups Speaker",
-    "ADPList Mentor — Product Management",
-    "3× Hackathon Winner (SAP, Google, NES)",
-    "AI Community Lead — AI Pilipinas Cebu Chapter"
-  ];
-
-  const education = [
-    {
-      institution: "Asian Institute of Management",
-      degree: "Post Graduate Diploma",
-      field: "Artificial Intelligence and Machine Learning"
-    },
-    {
-      institution: "The Wharton School, University of Pennsylvania",
-      degree: "Specialization Certificate",
-      field: "Entrepreneurship"
-    }
-  ];
-
-  const coreCompetencies = [
-    { category: "Technical Leadership", skills: ["AI Engineering", "LLM Engineering", "AI Architecture", "Prompt Engineering", "Agentic Systems"] },
-    { category: "Product Management", skills: ["Product Strategy", "Roadmapping", "GTM Strategy", "PLG Implementation", "OKRs"] },
-    { category: "Business Impact", skills: ["Revenue Growth", "Cost Optimization", "Digital Transformation", "Market Analysis", "Stakeholder Management"] },
-    { category: "Team Leadership", skills: ["Cross-Functional Leadership", "Agile/Scrum", "Innovation Management", "Public Speaking", "Community Building"] }
-  ];
+  const experiences = executiveExperiences;
 
   return (
     <div className="min-h-screen bg-gray-50">

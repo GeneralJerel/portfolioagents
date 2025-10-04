@@ -8,82 +8,18 @@ import {
   Brain, Users, TrendingUp, Mail, MapPin, ExternalLink,
   Calendar, ChevronRight, Star, Globe
 } from "lucide-react";
+import { creativeExperiences, creativeProjects, creativeSkills } from "@/mockdata/jerel";
 
 const CreativeBoldPage: React.FC = () => {
-  const experiences = [
-    {
-      company: "FrontierAI",
-      location: "Global (Remote)",
-      title: "Founder — Product Engineer",
-      startDate: "2024-10",
-      endDate: "Present",
-      color: "from-purple-500 to-pink-500",
-      highlights: [
-        "Shipped AI-native products from zero to traction: Nona (2,000 users in 72h)",
-        "Built RecurringHQ in ~3 hours with Lovable; ~90% faster than typical builds",
-        "1.35M Facebook views in 90 days (+1,213% QoQ)"
-      ]
-    },
-    {
-      company: "Full Scale Ventures",
-      location: "Kansas, US (Remote)",
-      title: "Director of Product Management",
-      startDate: "2024-11",
-      endDate: "Present",
-      color: "from-blue-500 to-cyan-500",
-      highlights: [
-        "Led AI & prompt engineering strategy across multiple ventures",
-        "Launched 100+ prompt prototypes, cutting validation from ~2 weeks to 1 day",
-        "Aligned product roadmaps across engineering, design, and business"
-      ]
-    },
-    {
-      company: "GoTeam",
-      location: "Cebu City, PH",
-      title: "Director of Product Management",
-      startDate: "2024-04",
-      endDate: "2024-09",
-      color: "from-green-500 to-teal-500",
-      highlights: [
-        "Reduced hiring turnaround from 45 days to 18 days",
-        "Processed 61,151 applicants; saved ~428,000 minutes via automation",
-        "Shipped automation tool saving ~72,000 hours annually"
-      ]
-    }
-  ];
-
-  const projects = [
-    {
-      name: "SenatorMatch",
-      impact: "2,000 users in 48 hours",
-      description: "AI agents helping voters find candidates aligned with their values",
-      icon: <Users className="w-8 h-8" />,
-      gradient: "from-indigo-500 to-purple-500"
-    },
-    {
-      name: "InterviewRoom.ai",
-      impact: "$7,788 revenue in first 30 days",
-      description: "AI agent for hiring teams",
-      icon: <Brain className="w-8 h-8" />,
-      gradient: "from-pink-500 to-rose-500"
-    },
-    {
-      name: "DatosPilipinas.com",
-      impact: "Civic Tech Innovation",
-      description: "Data and AI solving Filipino problems",
-      icon: <Globe className="w-8 h-8" />,
-      gradient: "from-blue-500 to-indigo-500"
-    }
-  ];
-
-  const skills = [
-    { name: "AI Engineering", level: 95, color: "bg-gradient-to-r from-purple-500 to-pink-500" },
-    { name: "Product Strategy", level: 90, color: "bg-gradient-to-r from-blue-500 to-cyan-500" },
-    { name: "Prompt Engineering", level: 95, color: "bg-gradient-to-r from-green-500 to-teal-500" },
-    { name: "Agentic Systems", level: 85, color: "bg-gradient-to-r from-orange-500 to-red-500" },
-    { name: "PLG Strategy", level: 88, color: "bg-gradient-to-r from-indigo-500 to-purple-500" },
-    { name: "Cross-Functional Leadership", level: 92, color: "bg-gradient-to-r from-pink-500 to-rose-500" }
-  ];
+  const experiences = creativeExperiences;
+  const skills = creativeSkills;
+  
+  // Map icon names to actual components
+  const iconMap = { Users, Brain, Globe };
+  const projects = creativeProjects.map(project => ({
+    ...project,
+    icon: React.createElement(iconMap[project.iconName], { className: "w-8 h-8" })
+  }));
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
