@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { 
   Mail, 
   MapPin, 
@@ -666,6 +667,14 @@ export default function SohamChakrabortyPage() {
           </div>
         </div>
       </section>
+
+      {/* Vapi Voice Widget */}
+      {/* @ts-expect-error - Custom web component defined in types/vapi-widget.d.ts */}
+      <vapi-widget assistant-id="f2cba643-d325-4688-8deb-4165daba5a53" public-key="501a5fd6-9aee-456d-b490-a4a138632425" mode="voice"></vapi-widget>
+      <Script
+        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+        strategy="lazyOnload"
+      />
     </div>
   );
 }
