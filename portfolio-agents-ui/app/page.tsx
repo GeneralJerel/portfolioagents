@@ -14,13 +14,13 @@ export default function Home() {
               <span className="text-gray-500">.io</span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
+              <a href="/how-it-works" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
                 How It Works
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
+              <a href="/examples" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
                 Examples
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
+              <a href="/pricing" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
                 Pricing
               </a>
             </nav>

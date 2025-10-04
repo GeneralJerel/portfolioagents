@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
             Get Started Free
           </a>
           <a
-            href="/jerel"
+            href="/u/jerel"
             className="px-8 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors duration-200 inline-block"
           >
             See Example

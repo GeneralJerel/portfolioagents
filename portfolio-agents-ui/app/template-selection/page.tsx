@@ -54,16 +54,16 @@ const TemplateSelectionPage: React.FC = () => {
       // Navigate to the appropriate template
       switch(selectedTemplate) {
         case "modern-minimal":
-          router.push('/jerel');
+          router.push('/u/jerel');
           break;
         case "creative-bold":
-          router.push('/jerel-creative');
+          router.push('/u/jerel/creative');
           break;
         case "executive-classic":
-          router.push('/jerel-executive');
+          router.push('/u/jerel/executive');
           break;
         default:
-          router.push('/jerel');
+          router.push('/u/jerel');
       }
     }
   };
