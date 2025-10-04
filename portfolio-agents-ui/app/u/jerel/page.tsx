@@ -488,34 +488,11 @@ export default function JerelPage() {
         </div>
       </section>
 
-      {/* Vapi Widget */}
-      {React.createElement('vapi-widget', {
-        'public-key': "501a5fd6-9aee-456d-b490-a4a138632425",
-        'assistant-id': "ccc490af-8b1d-4eab-b7f0-5a316daf2fec",
-        mode: "voice",
-        theme: "dark",
-        'base-bg-color': "#000000",
-        'accent-color': "#14B8A6",
-        'cta-button-color': "#000000",
-        'cta-button-text-color': "#ffffff",
-        'border-radius': "large",
-        size: "full",
-        position: "bottom-right",
-        title: "TALK WITH AI",
-        'start-button-text': "Start",
-        'end-button-text': "End Call",
-        'chat-first-message': "Hey, How can I help you today?",
-        'chat-placeholder': "Type your message...",
-        'voice-show-transcript': "true",
-        'consent-required': "true",
-        'consent-title': "Terms and conditions",
-        'consent-content': "By clicking 'Agree,' and each time I interact with this AI agent, I consent to the recording, storage, and sharing of my communications with third-party service providers, and as otherwise described in our Terms of Service.",
-        'consent-storage-key': "vapi_widget_consent"
-      })}
-
-      {/* Load Vapi Widget Script */}
-      <Script 
-        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" 
+      {/* Vapi Voice Widget */}
+      {/* @ts-expect-error - Custom web component defined in types/vapi-widget.d.ts */}
+      <vapi-widget assistant-id="ccc490af-8b1d-4eab-b7f0-5a316daf2fec" public-key="501a5fd6-9aee-456d-b490-a4a138632425" mode="voice"></vapi-widget>
+      <Script
+        src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
         strategy="lazyOnload"
       />
     </div>
