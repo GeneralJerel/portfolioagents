@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Script from "next/script";
 import { Mail, MapPin, ExternalLink, Calendar, TrendingUp, Linkedin, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -241,6 +242,28 @@ export default function JerelPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center space-x-4">
+              <Link 
+                href="/examples"
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </Link>
+              <div className="font-bold text-xl">
+                <span className="text-gray-900">Jerel</span>
+                <span className="text-blue-600"> Velarde</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
