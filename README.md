@@ -45,7 +45,8 @@ Upload your resume → Get an AI agent that represents you → Share a professio
 ## Tech Stack
 
 - **Frontend**: Next.js 15 + React 19 + TypeScript + Tailwind CSS
-- **AI Agents**: [Strands Agents SDK](https://strandsagents.com) + [VAPI](https://docs.vapi.ai) for voice
+- **Database**: Supabase (PostgreSQL + Auth + Storage)
+- **AI Agents**: [VAPI](https://docs.vapi.ai) for voice
 - **Design**: Atomic Design pattern with shadcn/ui components
 
 ## Project Structure
@@ -73,6 +74,32 @@ portfolio-agents/
 2. Connect repository to Vercel
 3. Set root directory to `portfolio-agents-ui`
 4. Deploy
+
+## Database Migration
+
+🚀 **Currently migrating to Supabase!**
+
+### Quick Links
+- 📋 [**Migration Summary**](./MIGRATION_SUMMARY.md) - Start here! Executive overview
+- 🚀 [**Quick Start Guide**](./MIGRATION_QUICK_START.md) - Get up and running in 1 hour
+- 📘 [**Full Migration Plan**](./SUPABASE_MIGRATION_PLAN.md) - Complete technical specification
+- ✅ [**Implementation Checklist**](./IMPLEMENTATION_CHECKLIST.md) - 7-week task tracker
+- 🏗️ [**Architecture Diagram**](./ARCHITECTURE.md) - System design & data flows
+
+### Roadmap
+- ✅ **Epic 1:** Resume PDF → Voice Agent (Current)
+- 🔄 **Epic 2:** LinkedIn Profile Import
+- 🔄 **Epic 3:** Story Interviewer (AI-powered)
+- 🔄 **Epic 4:** Customize Resume for Jobs
+- 🔄 **Epic 5:** Generate Cover Letters
+
+### Implementation Status
+- ✅ Planning complete (4 comprehensive documents)
+- ⏳ Database schema designed (10 tables)
+- ⏳ API routes specified (15+ endpoints)
+- ⏳ Ready to start implementation
+
+**Next Step:** Follow [MIGRATION_QUICK_START.md](./MIGRATION_QUICK_START.md) to set up Supabase
 
 ## Contributing
 
