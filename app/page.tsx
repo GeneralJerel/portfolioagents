@@ -17,7 +17,7 @@ export default function Home() {
               <a href="#" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
                 How It Works
               </a>
-              <a href="/jerel" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
+              <a href="/examples" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
                 Examples
               </a>
               <a href="#" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
